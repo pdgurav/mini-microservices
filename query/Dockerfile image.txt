@@ -1,0 +1,29 @@
+* Creating Docker image:
+    Dockerfile: config to define how container should behave, then provide to Docker Client
+
+*   Docker Client takes config and create Usable Image 
+
+*   Creating a Dockerfile
+        Specify a base image
+        Run some additional commands to install additional programs
+        Specify a command to run on container setup
+
+
+* create an image that runs redis-server
+
+
+*   once Docker is created use following commands:
+    1) docker build . (building an image, return container id)
+    2) docker run <container-id> (start container)
+
+*   When "docker build ." command runs second time, it uses cache & rebuilds with cache as long as instructions in dockerfile are same. 
+
+*   docker images can have tagged name instead of random id string
+eg., docker build -t prashant/mydocker:latest .
+    (docker id / Repoor Project name : varsion)
+
+Quick note for windows
+    ubuntu/mac ->    docker commit -c 'CMD ["redis-server"]' CONTAINERID
+    windows -> docker commit -c "CMD 'redis-server'" CONTAINERID
+
+
