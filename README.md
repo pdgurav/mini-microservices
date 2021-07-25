@@ -1,2 +1,3 @@
-# mini-microservices
-Mini microservices application with custom event bus
+# mini-microservices-demo
+
+h1. Mini microservices
